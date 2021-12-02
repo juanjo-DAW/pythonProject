@@ -5,11 +5,5 @@
 
 def main():
 
-    Nom = input("Introdueix el teu Nom:")
-    Cognom1 = input("Introdueix el teu 1r cognom: ")
-    Cognom2 = input("Introdueix el teu 2r cognom: ")
-
-    print("El teu codi és: ", Cognom1[:2] + Cognom2[:2]+Nom[:2])
-
 if __name__ == '__main__':
     main()
