@@ -4,11 +4,12 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 def main():
-    lst = list()
-    x = int(input("Introdueix el valor del rang de la teva llista: "))
 
-    for x in lst():
-        lst.append("Introdueix un valor per la teva llista:")
+    Nom = input("Introdueix el teu Nom:")
+    Cognom1 = input("Introdueix el teu 1r cognom: ")
+    Cognom2 = input("Introdueix el teu 2r cognom: ")
+
+    print("El teu codi és: ", Cognom1[:2] + Cognom2[:2]+Nom[:2])
 
 if __name__ == '__main__':
     main()
