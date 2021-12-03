@@ -5,9 +5,13 @@
 
 def main():
     lst = list()
+    codilst = list()
+    tflst = list()
+    edadlst = list()
+    contactolst = list()
     i = 0
-    j = 0
-    k = 4
+
+
     registres = int(input("Introdueix el nombre de valors del teus registres: "))
     while registres < 1:
         registres = int(input("Introdueix el nombre de valors del teus registres: "))
@@ -34,15 +38,14 @@ def main():
             contacte = int(input("Introdueix si és un contacte nou o no: "))
         lst.append(contacte)
 
-    while i < registres:
-        print(lst[j:k])
+        codilst.append(codi)
+        tflst.append(telefon)
+        edadlst.append(edad)
+        contactolst.append(contacte)
+
+    while i < len(codilst):
+        print("\t",codilst[i],"\t",tflst[i],"\t",edadlst[i],"\t",contactolst[i])
         i += 1
-        j += 4
-        k += 4
-
-
-    # for x in range(registres):
-    #     print("El teu codi és: ", cognom1[:2] + cognom2[:2] + nom[:2])
 
 if __name__ == '__main__':
     main()
