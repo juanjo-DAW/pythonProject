@@ -7,18 +7,17 @@ def main():
     lst = list()
     i = 0
     j = 0
-    k = 6
+    k = 4
     registres = int(input("Introdueix el nombre de valors del teus registres: "))
     while registres < 1:
         registres = int(input("Introdueix el nombre de valors del teus registres: "))
 
     for x in range(registres):
         nom = input("Introdueix el teu Nom:")
-        lst.append(nom)
         cognom1 = input("Introdueix el teu 1r cognom: ")
-        lst.append(cognom1)
         cognom2 = input("Introdueix el teu 2r cognom: ")
-        lst.append(cognom2)
+        codi = cognom1[:2] + cognom2[:2] + nom[:2]
+        lst.append(codi)
 
         telefon = input("Introdueix el teu número de telèfon: ")
         while len(telefon) < 9 or len(telefon) > 9:
@@ -36,10 +35,10 @@ def main():
         lst.append(contacte)
 
     while i < registres:
-        print( lst[j:k])
+        print(lst[j:k])
         i += 1
-        j += 6
-        k += 6
+        j += 4
+        k += 4
 
 
     # for x in range(registres):
